@@ -7,6 +7,11 @@
 This program creates a P2P (peer-to-peer) client-server TCP LAN connection, where the client and server do not know each other's IP. Their connection is facilitated by 2 respective routers ("server-router," "S-Router"), requiring a total of 4 different machines. The 2 S-Routers serve to connect the Client and Server, immediately threading any connections, and after the client and server are connected, immediately end the connection to the S-Router, while continuing to wait for further clients and servers to connect. The client then streams a file to the server directly: the peer-to-peer connection. The client outputs how many bytes it has sent, while the server outputs how many bytes it has received, to verify that the total file has been sent. Finally, if the file is not a .txt file, the program attempts to open and play the file in JavaFX on both the client and server machines, to verify transmission. Connection setup time, routing table lookup time, and bytes sent per
 millisecond are also calulated and printed.
 
+## Network Diagram:
+![image](https://user-images.githubusercontent.com/33675444/204374820-56a14a65-f2d2-45c4-8a4e-d7a04fd5932c.png)
+![image](https://user-images.githubusercontent.com/33675444/204375135-4c87a129-15ad-40ad-aa1b-384b153df5c3.png)
+
+
 ## THIS PROGRAM REQUIRES JAVAFX TO RUN
 ### To run WITHOUT JavaFX, or if playing video/audio is not wanted/required:
 1) Delete ServerApp.java and ClientApp.java
