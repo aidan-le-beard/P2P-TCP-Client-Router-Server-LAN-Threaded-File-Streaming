@@ -25,15 +25,15 @@ millisecond are also calulated and printed.
 1) Place ClientApp.java (if using JavaFX) and TCPClient.java on one computer.
 2) Place ServerApp.java (if using JavaFX) and TCPServer.java on a second computer that is on the same Wi-Fi network.
 3) Place ClientSRouterSThread.java and ClientTCPServerRouter.java on a third computer that is on the same Wi-Fi network.
-4) Edit TCPClient.java line 13: put the IP of the machine with SThread.java and TCPServerRouter.java on it. 
+4) Place ServerTCPServerRouter.java and ServerSRouterSThread.java on a fourth computer that is on the same Wi-Fi network.
+5) Edit ClientSRouterSThread.java line 9: put the IP of the machine with ServerTCPServerRouter.java and ServerSRouterSThread.java on it. 
    #### Note: IP can be found on the other machine in command prompt by typing “ipconfig” and retrieving the IPv4 Address from the section titled “Wireless LAN adapter Wi-Fi.”
-6) Edit TCPClient.java line 37: put the file path to the file that you wish for the client to transmit here. This file will be sent to the server.
-7) Edit TCPClient.java line 43: put the IP of the machine with ServerApp.java and TCPServer.java on it.
-8) Edit TCPServer.java line 13: put the IP of the machine with SThread.java and TCPServerRouter.java on it.
-9) Edit TCPServer.java line 38: put the file path to where the server should save the file received from the client.
-10) Edit TCPClient.java line 40: put the IP of the machine with ClientApp.java and TCPClient.java on it.
-11) Run TCPServerRouter.java first.
-12) Run TCPServer.java second.
-13) WAIT for server to write that it is connected to the router.
-14) Run TCPClient.java.
-15) **Optional:** Repeat steps 12-14 for other Server/Client pairs that are prepped to connect using the same Server Router.
+6) Edit TCPClient.java line 8: put the IP of the machine with ClientSRouterSThread.java and ClientTCPServerRouter.java on it.
+7) **Optional (for multiple connections):** If only connecting 1 client-server pair, this step is not necessary. If connecting more: edit TCPClient.java line 9: put the number of the node you wish to connect to: starts at M1, followed by M2, M3, etc. So if trying to connect to the 4th server you have connected, it would be M4, for example.
+8) Edit TCPClient.java line 24: put the file path to the file that you wish for the client to transmit here. This file will be sent to the server.
+9) Edit TCPServer.java line 11: put the IP of the machine with ServerTCPServerRouter.java and ServerSRouterSThread.java on it.
+10) Edit TCPServer.java line 35: put the file path to where the server should save the file received from the client.
+12) Run ClientTCPServerRouter.java and ServerTCPServerRouter.java first.
+13) Run TCPServer.java second.
+14) Run TCPClient.java third.
+15) **Optional:** Repeat steps 13-14 for other Server/Client pairs that are prepped to connect using the same Server Routers. If connecting more pairs, make sure to follow step 7, changing the line to "M2" for the 2nd pair, "M3" for the 3rd pair, etc.
