@@ -44,3 +44,11 @@ Knowledge of Java IDE usage and Java code execution is assumed.
 13) Run TCPServer.java second.
 14) Run TCPClient.java third.
 15) **Optional:** Repeat steps 13-14 for other Server/Client pairs that are prepped to connect using the same Server Routers. If connecting more pairs, make sure to follow step 7, changing the line to "M2" for the 2nd pair, "M3" for the 3rd pair, etc.
+
+### Sample Output:
+
+![image](https://user-images.githubusercontent.com/33675444/205214359-5fea56d9-4a91-4f09-a52d-f823a19c51b3.png)
+
+
+![image](https://user-images.githubusercontent.com/33675444/205214384-cefaef50-bdf8-4fee-8cc0-10a053c2ae7d.png)
+
